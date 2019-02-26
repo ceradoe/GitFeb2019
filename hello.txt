@@ -60,3 +60,36 @@ e51911f 2019-02-26|git commands (tag: v1.01) Pandey
 4504238 2019-02-26|first commit Pandey
 PS C:\lab>
 ========================================================
+PS C:\lab> to unstage---->
+PS C:\lab> git reset HEAD .\hello.txt
+Unstaged changes after reset:
+M       hello.txt
+PS C:\lab>
+=======================REVERT=================================
+PS C:\lab> git commit -a -m "trial commit"
+[detached HEAD 11d9dd3] trial commit
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+PS C:\lab> git log --pretty=format:"%h %ad|%s%d %an" --date=short
+11d9dd3 2019-02-26|trial commit (HEAD) john doe
+0f38cb3 2019-02-26|unstage john doe
+eaa742b 2019-02-26|added text on tags john doe
+f9f165b 2019-02-26|added comment (tag: v1.0) john doe
+8a1f452 2019-02-26|next commit john doe
+e51911f 2019-02-26|git commands (tag: v1.01) Pandey
+32d45b5 2019-02-26|second commit Pandey
+4504238 2019-02-26|first commit Pandey
+PS C:\lab> git revert HEAD
+[detached HEAD 55f2b9d] Revert "trial commit"
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+PS C:\lab> git log --pretty=format:"%h %ad|%s%d %an" --date=short
+55f2b9d 2019-02-26|Revert "trial commit" (HEAD) john doe
+11d9dd3 2019-02-26|trial commit john doe
+0f38cb3 2019-02-26|unstage john doe
+eaa742b 2019-02-26|added text on tags john doe
+f9f165b 2019-02-26|added comment (tag: v1.0) john doe
+8a1f452 2019-02-26|next commit john doe
+e51911f 2019-02-26|git commands (tag: v1.01) Pandey
+32d45b5 2019-02-26|second commit Pandey
+4504238 2019-02-26|first commit Pandey
+PS C:\lab>
+====================================================================

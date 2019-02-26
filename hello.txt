@@ -12,3 +12,5 @@ git push origin master
 
 PS C:\lab> git config --global user.name "john doe"
 PS C:\lab> git config --global  user.email john.doe@gmail.com
+PS C:\lab> git log --pretty=format:"%h %ad|%s%d %an" --date=short
+PS C:\lab> git tag v1.0

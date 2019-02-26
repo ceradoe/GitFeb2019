@@ -60,3 +60,9 @@ e51911f 2019-02-26|git commands (tag: v1.01) Pandey
 4504238 2019-02-26|first commit Pandey
 PS C:\lab>
 ========================================================
+PS C:\lab> to unstage---->
+PS C:\lab> git reset HEAD .\hello.txt
+Unstaged changes after reset:
+M       hello.txt
+PS C:\lab>
+========================================================

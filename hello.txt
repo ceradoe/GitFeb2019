@@ -1,3 +1,10 @@
-first line of code
-secnod line of code
-line fpr second commit
+git init
+vi hello.txt
+git add file.txt
+git commit -a -m "first commit"
+git status -s
+git config --global http.proxy web-proxy.xxx.xxxcorp.net:8080
+git remote add origin https://github.com/ceradoe/GitFeb2019.git
+
+#push content of master to origin( i.e remote)
+git push origin master

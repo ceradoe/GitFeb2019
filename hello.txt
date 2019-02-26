@@ -8,3 +8,6 @@ git remote add origin https://github.com/ceradoe/GitFeb2019.git
 
 #push content of master to origin( i.e remote)
 git push origin master
+
+PS C:\lab> git config --global user.name "john doe"
+PS C:\lab> git config --global  user.email john.doe@gmail.com
